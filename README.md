@@ -1,7 +1,7 @@
 # Personal website
 This is a simple static website that will display links to my various internet profiles and what I am upto.
 Address: www.mohammedri.com
-
+The site is hosted using github pages. 
 ![image](https://user-images.githubusercontent.com/6232733/34442762-36200cb2-ec92-11e7-8231-e7f9dff87c67.png)
 
 
