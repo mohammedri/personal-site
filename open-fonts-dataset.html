@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen" />
+    	<title>
+    		Open Typefaces to image Dataset
+    	</title>
+    </head>
+    <body>
+        <article>
+          <section>
+            <h1> Open Typefaces - Character Image & CSV Dataset </h1>
+            <p class="subtitle"> A dataset for Machine Learning experiment on Typefaces</p>
+          </section>
+          <section>
+            <p> 
+              This is a dataset that consists of 2500+ fonts taken from the <a href="https://fonts.google.com/">Google Fonts</a> database that have been converted to character-wise PNGs and then flattened into a CSV for ML experiments.
+            </p>
+            <p>
+            I have only considered uppercase / lower case letters and numbers - ignoring other symbols or dingbats. 
+            </p>
+            <p>
+            Each PNG is in greyscale (each pixel can take the value of 0 to 255)) 28x28 pixels in size. 
+            </p>
+            </br>
+            <figure>
+                <label for="mn-exports-imports" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-exports-imports" class="margin-toggle"/><span class="marginnote">Screenshot of a subset of the dataset.<em>All fonts from Google Fonts</em>, <a href="fonts.google.com">fonts.google.com</a></span>
+                <img src="assets/images/screenshot-fonts.png" />      
+            </figure>
+            <p>
+                The CSV is formatted similar to <a href="https://pjreddie.com/projects/mnist-in-csv/">MNIST in CSV</a>:
+                <pre><code>
+                    font-name, character, pix-11, pix-12, pix-13, ...
+                </code></pre>
+            </p>
+          </section>
+          <hr> 
+          <section>
+            <h3>Download: </h3>
+            <p>
+              <a class="navigation-link" href="https://console.cloud.google.com/storage/browser/open-fonts-dataset/images">Fonts to Character-wise PNG (28x28), alphabets & numbers only</a>
+              <a class="navigation-link" href="https://console.cloud.google.com/storage/browser/open-fonts-dataset/csv">Character-wise PNGs (28x28) to CSV, alphabets & numbers only</a>
+            </p>
+          </section>
+          <hr> 
+          <section>
+            <h3>Problems? </h3>
+            <p>
+              Tweet at me <a href="https://twitter.com/mohammedri_">@mohammedri_</a> if something needs fixing.
+            </p>
+          </section>
+          <script src="js/scripts.js"></script>
+        </article>
+    </body>
+</html>
+
