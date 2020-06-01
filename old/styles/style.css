@@ -52,7 +52,7 @@ body { width: 87.5%;
        margin-right: auto;
        padding-left: 12.5%;
        font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-       background-color: #fffff8;
+       background-color: #ffffff;
        color: #111;
        max-width: 1400px;
        counter-reset: sidenote-counter; }
@@ -123,6 +123,15 @@ p { line-height: 2rem;
 
 /* Chapter Epigraphs */
 div.epigraph { margin: 5em 0; }
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}
 
 div.epigraph > blockquote { margin-top: 3em;
                             margin-bottom: 3em; }
@@ -202,7 +211,7 @@ img { max-width: 100%; }
 
 blockquote .sidenote, blockquote .marginnote { margin-right: -82%;
                                                min-width: 59%;
-                                               text-align: left; }    
+                                               text-align: left; }
 
 p, footer, table { width: 55%; }
 

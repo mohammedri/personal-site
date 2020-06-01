@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen" />
+    <title>
+        Typefaces Character Font Images & CSV Dataset
+    </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156909377-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156909377-1');
+    </script>
+</head>
+
+<body>
+    <article>
+        <section>
+            <h1>Typefaces - Character Font Image & CSV Dataset </h1>
+            <p class="subtitle"> A dataset for Machine Learning experiment on Typefaces</p>
+        </section>
+        <section>
+            <hr>
+            <section>
+                <h3>Download: </h3>
+                <p>
+                    <a class="navigation-link"
+                        href="https://console.cloud.google.com/storage/browser/open-fonts-dataset/images">Fonts to
+                        Character-wise PNG (28x28), alphabets & numbers only</a>
+                    <a class="navigation-link"
+                        href="https://console.cloud.google.com/storage/browser/open-fonts-dataset/csv">Character-wise
+                        PNGs (28x28) to CSV, alphabets & numbers only</a>
+                </p>
+            </section>
+            <hr>
+            <p>
+                This is a dataset that consists of 2500+ fonts taken from the <a href="https://fonts.google.com/">Google
+                    Fonts</a> database that have been converted to character-wise PNGs and then flattened into a CSV for
+                ML experiments.
+            </p>
+            <p>
+                I have only considered uppercase / lower case letters and numbers - ignoring other symbols or dingbats.
+            </p>
+            <p>
+                Each PNG is in greyscale (each pixel can take the value of 0 to 255)) 28x28 pixels in size.
+            </p>
+            </br>
+            <figure>
+                <label for="mn-exports-imports" class="margin-toggle">&#8853;</label><input type="checkbox"
+                    id="mn-exports-imports" class="margin-toggle" /><span class="marginnote">Screenshot of a subset of
+                    the dataset.<em>All fonts from Google Fonts</em>, <a
+                        href="fonts.google.com">fonts.google.com</a></span>
+                <img src="assets/images/screenshot-fonts.png" />
+            </figure>
+            <p>
+                The CSV is formatted similar to <a href="https://pjreddie.com/projects/mnist-in-csv/">MNIST in CSV</a>:
+                <pre><code>
+                    font-name, character, pix-11, pix-12, pix-13, ...
+                </code></pre>
+            </p>
+            <figure>
+                <label for="mn-exports-imports" class="margin-toggle">&#8853;</label><input type="checkbox"
+                    id="mn-exports-imports" class="margin-toggle" /><span class="marginnote">Screenshot of what the CSV
+                    looks like.<em>All fonts from Google Fonts</em>, <a
+                        href="fonts.google.com">fonts.google.com</a></span>
+                <img src="assets/images/screenshot-csv.png" />
+            </figure>
+        </section>
+        <hr>
+        <section>
+            <h3>Problems? Built something cool?</h3>
+            <p>
+                Tweet at me <a href="https://twitter.com/mohammedri_">@mohammedri_</a>.
+            </p>
+        </section>
+        <hr>
+        <section>
+            <p>If you want to see my very scrappy code:</p>
+            <pre><code>
+image_width = 28
+image_height = 28
+
+characters = list(string.ascii_letters + string.digits) # Characters to consider, ignoring symbols
+
+with open(csv_dataset_folder + "/" + "google_fonts_dataset.csv", 'w', newline='') as file:
+    writer = csv.writer(file, dialect="excel")
+
+    for font_file in ttf_files:
+        print(font_file)
+
+        font_name = font_file.split("/")[-1]
+
+        font = ImageFont.truetype(font_file, 20, encoding="unic")
+
+        for character in characters:
+            image = Image.new('L', (image_width,image_height), "black")
+            draw = ImageDraw.Draw(image)
+            text_width, text_height = draw.textsize(character, font=font)
+
+            offset = font.getoffset(character)
+
+            draw.text(
+                ((image_width-(text_width+offset[0]))/2,(image_height-(text_height+offset[1]))/2),
+                character,
+                fill='white',
+                font=font
+            )
+
+            row = list(image.getdata())
+            row.insert(0, character)
+            row.insert(0, font_name)
+
+            writer.writerow(row)
+
+            if character.isupper():
+                image.save(dataset_dir + "/" + images_dir + f"/{font_name}-upper-{character}.png", "PNG")
+            else:
+                image.save(dataset_dir + "/" + images_dir + f"/{font_name}-{character}.png", "PNG")
+              </code></pre>
+        </section>
+        <script src="js/scripts.js"></script>
+    </article>
+</body>
+
+</html>
