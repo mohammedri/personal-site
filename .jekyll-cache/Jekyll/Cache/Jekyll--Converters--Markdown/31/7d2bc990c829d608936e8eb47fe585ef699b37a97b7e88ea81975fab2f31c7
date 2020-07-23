@@ -1,0 +1,20 @@
+I"Æ<p>This sounds silly now and I am almost ashamed to say how much of a terrible time I have always had remembering what constitutes true positives, true negatives, false positives &amp; false negatives.</p>
+
+<p>To this day - I will slip occassionally but much lesser so now then before!</p>
+
+<p>Here is the silly way it finally worked and clicked for me:</p>
+
+<p>True positives == these are actually true AND have been selected by the model. <strong>Yay, found a good one!</strong></p>
+
+<p>True negative == these are actually wrong and have been classified as wrong by the model.  <strong>Nothing here, really!</strong></p>
+
+<p>False Negatives == these are actually correct but have been classified as wrong by the model. <strong>Missed a good one, so sorry!</strong></p>
+
+<p>False Positive == these are actually wrong but have been classified as correct by the model.  <strong>Oops, false alarm, sorry!</strong>.</p>
+
+<hr />
+
+<p>This diagram from Wikimedia also really helped click &amp; remember this concept. I am a visual learner, as such the picture is often stuck in my head.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Precisionrecall.svg/495px-Precisionrecall.svg.png" alt="" /></p>
+:ET

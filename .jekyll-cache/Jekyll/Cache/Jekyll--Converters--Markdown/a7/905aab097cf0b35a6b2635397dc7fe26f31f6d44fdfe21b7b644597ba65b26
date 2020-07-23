@@ -1,0 +1,49 @@
+I"_	<h1 id="hello---">Hello - 👋🏽</h1>
+
+<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
+  <img src="../assets/photo.jpg" alt="Smiley face" style="float:left;width:90px;height:90px;padding-right: 20px" />
+  I'm a Product Manager working on Deep Learning Products <a href="www.dessa.com">@Dessa</a> (acquired by <a href="www.squareup.com">@Square</a>). <br />You can learn more about me <span style="font-weight: bold"><a href="/about">here.</a></span>.
+  <br /><br />
+  Or you can reach out to me on <b><a href="www.twitter.com/mohammedri_">Twitter</a></b> (DMs open, say hi!).
+</p>
+
+<p><em>This website serves few purposes:</em></p>
+<ul>
+  <li>I maintain most of my long form writings here; short form thoughts are usually on <a href="www.twitter.com/mohammedri_">Twitter</a>.</li>
+  <li>This is my JavaScript/Web development playground</li>
+  <li>It also holds several incomplete thoughts under the <strong>#incomplete</strong> header.</li>
+</ul>
+
+<h2 id="posts">Posts</h2>
+<p>P.S. In true Zettelkasten style - if you want to view the links between each note in a graph, <span style="font-weight: bold"><a href="/zettelkasten-graph">check this out.</a></span>.</p>
+
+<h4 id="untagged">#untagged</h4>
+
+<ul>
+  <li><a class="internal-link" href="/atlas-oss">Open sourcing Atlas - tools for Applied Deep Learning Development</a></li>
+  <li><a class="internal-link" href="/datacouncil-talk">Datacouncil NYC 19’ Talk</a></li>
+  <li><a class="internal-link" href="/typeface-dataset">Typefaces - Character Font Image &amp; CSV Dataset</a></li>
+  <li><a class="internal-link" href="/uoft">Partnering with University of Toronto - CSC 454 - The business of software</a></li>
+</ul>
+
+<h4 id="machine-learning">#machine-learning</h4>
+<ul>
+  <li><a class="internal-link" href="/understanding-ml-sets">Understanding True Positives, False Positives, True Negatives &amp; False Negatives</a></li>
+  <li><a class="internal-link" href="/precision-recall">Precision vs. Recall</a></li>
+</ul>
+
+<h4 id="productivity">#productivity</h4>
+<ul>
+  <li><a class="internal-link" href="/distraction-time">Schedule personal distraction time to be able to deep work effectively</a></li>
+  <li><a class="internal-link" href="/action-is-better">Action is harder but better than reading</a></li>
+</ul>
+
+<h2 id="books--reviews">Books &amp; Reviews</h2>
+
+<style>
+  .wrapper {
+    max-width: 46em;
+  }
+</style>
+
+:ET

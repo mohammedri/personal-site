@@ -1,0 +1,75 @@
+I"î"<h4 id="a-dataset-for-machine-learning-experiment-on-typefaces">A dataset for Machine Learning experiment on Typefaces.</h4>
+
+<p><em>Download:</em></p>
+<ul>
+  <li><a href="https://console.cloud.google.com/storage/browser/open-fonts-dataset/images">Fonts to Character-wise PNG (28x28), alphabets &amp; numbers only</a></li>
+  <li><a href="https://console.cloud.google.com/storage/browser/open-fonts-dataset/csv">Character-wise PNGs (28x28) to CSV, alphabets &amp; numbers only</a></li>
+</ul>
+
+<hr />
+
+<p>This is a dataset that consists of 2500+ fonts taken from the <a href="https://fonts.google.com/">Google Fonts</a> database that have been converted to character-wise PNGs and then flattened into a CSV for ML experiments.</p>
+
+<p>I have only considered uppercase / lower case letters and numbers - ignoring other symbols or dingbats.</p>
+
+<p>Each PNG is in greyscale (each pixel can take the value of 0 to 255)) 28x28 pixels in size.</p>
+
+<p><img src="../assets/screenshot-fonts.png" alt="" /></p>
+
+<p>The CSV is formatted similar to <a href="https://pjreddie.com/projects/mnist-in-csv/">MNIST in CSV</a>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>font-name, character, pix-11, pix-12, pix-13, ...
+</code></pre></div></div>
+
+<p><img src="../assets/screenshot-csv.png" alt="" /></p>
+
+<hr />
+
+<h3 id="bugs-built-something-cool">Bugs? Built something cool?</h3>
+
+<p>Reach out <a href="https://twitter.com/mohammedri_">@mohammedri_</a></p>
+
+<hr />
+
+<p>Script to generate this dataset from <code class="highlighter-rouge">.ttf</code> files:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">image_width</span> <span class="o">=</span> <span class="mi">28</span>
+<span class="n">image_height</span> <span class="o">=</span> <span class="mi">28</span>
+
+<span class="n">characters</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">string</span><span class="p">.</span><span class="n">ascii_letters</span> <span class="o">+</span> <span class="n">string</span><span class="p">.</span><span class="n">digits</span><span class="p">)</span> <span class="c1"># Characters to consider, ignoring symbols
+</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">csv_dataset_folder</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span> <span class="s">"google_fonts_dataset.csv"</span><span class="p">,</span> <span class="s">'w'</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s">''</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="p">.</span><span class="n">writer</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">dialect</span><span class="o">=</span><span class="s">"excel"</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">font_file</span> <span class="ow">in</span> <span class="n">ttf_files</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">font_file</span><span class="p">)</span>
+
+        <span class="n">font_name</span> <span class="o">=</span> <span class="n">font_file</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">"/"</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="n">font</span> <span class="o">=</span> <span class="n">ImageFont</span><span class="p">.</span><span class="n">truetype</span><span class="p">(</span><span class="n">font_file</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">"unic"</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">characters</span><span class="p">:</span>    
+            <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s">'L'</span><span class="p">,</span> <span class="p">(</span><span class="n">image_width</span><span class="p">,</span><span class="n">image_height</span><span class="p">),</span> <span class="s">"black"</span><span class="p">)</span>
+            <span class="n">draw</span> <span class="o">=</span> <span class="n">ImageDraw</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+            <span class="n">text_width</span><span class="p">,</span> <span class="n">text_height</span> <span class="o">=</span> <span class="n">draw</span><span class="p">.</span><span class="n">textsize</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+
+            <span class="n">offset</span> <span class="o">=</span> <span class="n">font</span><span class="p">.</span><span class="n">getoffset</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+
+            <span class="n">draw</span><span class="p">.</span><span class="n">text</span><span class="p">(</span>
+                <span class="p">((</span><span class="n">image_width</span><span class="o">-</span><span class="p">(</span><span class="n">text_width</span><span class="o">+</span><span class="n">offset</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span><span class="o">/</span><span class="mi">2</span><span class="p">,(</span><span class="n">image_height</span><span class="o">-</span><span class="p">(</span><span class="n">text_height</span><span class="o">+</span><span class="n">offset</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> 
+                <span class="n">character</span><span class="p">,</span> 
+                <span class="n">fill</span><span class="o">=</span><span class="s">'white'</span><span class="p">,</span> 
+                <span class="n">font</span><span class="o">=</span><span class="n">font</span>
+            <span class="p">)</span>
+
+            <span class="n">row</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">image</span><span class="p">.</span><span class="n">getdata</span><span class="p">())</span>
+            <span class="n">row</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">character</span><span class="p">)</span>
+            <span class="n">row</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">font_name</span><span class="p">)</span>
+            
+            <span class="n">writer</span><span class="p">.</span><span class="n">writerow</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+            
+            <span class="k">if</span> <span class="n">character</span><span class="p">.</span><span class="n">isupper</span><span class="p">():</span>
+                <span class="n">image</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">dataset_dir</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span> <span class="n">images_dir</span> <span class="o">+</span> <span class="s">f"/</span><span class="si">{</span><span class="n">font_name</span><span class="si">}</span><span class="s">-upper-</span><span class="si">{</span><span class="n">character</span><span class="si">}</span><span class="s">.png"</span><span class="p">,</span> <span class="s">"PNG"</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">image</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">dataset_dir</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span> <span class="n">images_dir</span> <span class="o">+</span> <span class="s">f"/</span><span class="si">{</span><span class="n">font_name</span><span class="si">}</span><span class="s">-</span><span class="si">{</span><span class="n">character</span><span class="si">}</span><span class="s">.png"</span><span class="p">,</span> <span class="s">"PNG"</span><span class="p">)</span>
+</code></pre></div></div>
+:ET

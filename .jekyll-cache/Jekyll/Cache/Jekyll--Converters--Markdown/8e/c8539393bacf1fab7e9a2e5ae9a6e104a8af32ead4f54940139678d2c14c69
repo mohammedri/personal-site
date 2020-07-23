@@ -1,0 +1,40 @@
+I"S<p>Precision &amp; recall has been explained a thousand times in various medium articles, but I have found most descriptions to be quite poor.</p>
+
+<p>Here is my attempt at it.</p>
+
+<p>First of, if you dont know your True Positives et. al. see <a href="understanding-ml-sets">ML Sets</a> before reading on.</p>
+
+<p>Precision is the ratio of actually true predictions (True positives)  by the model vs. Total number of things the model thinks is true i.e. (true positives + False positives).</p>
+
+<p>So let’s say we are building a search engine, user inputs a query - the search model returns 40 results <em>it thinks is relevant</em>.</p>
+
+<p>These 40 results will contain some which are actually relevant (true positives) and some that are not  (false positives)</p>
+
+<p>Let’s say 15 of these 40 are actually relevant.</p>
+
+<p>Then the precision of the model = 15/40.</p>
+
+<hr />
+
+<p>Recall is the ratio of actually true predictions made by the model vs. All the truth that is available (which may or may not have been predicted) in space (True positives + False negatives)</p>
+
+<p>Another  way to interpret this is  - in a world which has 40 correct results, how many of these correct results were the model actually able to retrieve?</p>
+
+<p>Let’s take the example of a search model:</p>
+<ul>
+  <li>A search engine model returns 30 pages.</li>
+  <li>20 of these are actually correct / relevant results.</li>
+  <li>But the search engine missed 40 other results that are also correct - the search engine classified the e40 as not relevant.</li>
+  <li>The recall is 20/(40+20)</li>
+</ul>
+
+<hr />
+
+<p>This diagram from Wikimedia also really helped click &amp; remember this concept. I am a visual learner, as such the picture is often stuck in my head.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Precisionrecall.svg/495px-Precisionrecall.svg.png" alt="" /></p>
+
+<hr />
+
+<p>Adapted from: <a href="https://en.wikipedia.org/wiki/Precision_and_recall#:~:text=In%20pattern%20recognition%2C%20information%20retrieval,of%20relevant%20instances%20that%20were">Precision and recall - Wikipedia</a></p>
+:ET
