@@ -9,34 +9,37 @@
 
   <meta charset="UTF-8">
 
-  <link rel="canonical" href="http://localhost:4000/404.html" />
+  <link rel="canonical" href="http://localhost:4000/precision-recall" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Mohammed Ridwanul">
+  <meta name="description" content="Precision &amp; recall has been explained a thousand times in various medium articles, but I have found most descriptions to be quite poor.">
 
   <meta property="og:site_name" content="Mohammed Ridwanul">
 
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
 
 
-  <meta property="og:description" content="Mohammed Ridwanul"/>
+  <meta property="og:description" content="Precision &amp; recall has been explained a thousand times in various medium articles, but I have found most descriptions to be quite poor."/>
 
 
 
-  <meta property="og:title" content="404">
+  <meta property="og:title" content="Precision vs. Recall">
   <meta property="og:type" content="article">
 
 
 
+  <meta property="article:published_time" content="2020-07-22T23:58:03-04:00">
+  <meta property="article:author" content="http://localhost:4000/">
 
-  <meta property="og:url" content="http://localhost:4000/404.html" />
+
+  <meta property="og:url" content="http://localhost:4000/precision-recall" />
 
 
 
   <title>
 
-      404 &mdash; Mohammed Ridwanul
+      Precision vs. Recall &mdash; Mohammed Ridwanul
 
   </title>
 </head>
@@ -47,10 +50,275 @@
 </div>
 </nav>
     <div class="wrapper">
-      <main><div>
-  <h1>Oops, that's a 404. 🙈</h1>
-  <p>Looks like this page doesn't exist. <a href="/">Return home</a> to get a fresh start.</p>
+      <main><article>
+  <div>
+    <h1>Precision vs. Recall</h1>
+    <time datetime="2020-07-22T23:35:33-04:00">
+      Last updated on July 22, 2020
+
+    </time>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <p>Precision &amp; recall has been explained a thousand times in various medium articles, but I have found most descriptions to be quite poor.</p>
+
+<p>Here is my attempt at it.</p>
+
+<p>First of, if you dont know your True Positives et. al. see <a href="understanding-ml-sets">ML Sets</a> before reading on.</p>
+
+<p>Precision is the ratio of actually true predictions (True positives)  by the model vs. Total number of things the model thinks is true i.e. (true positives + False positives).</p>
+
+<p>So let’s say we are building a search engine, user inputs a query - the search model returns 40 results <em>it thinks is relevant</em>.</p>
+
+<p>These 40 results will contain some which are actually relevant (true positives) and some that are not  (false positives)</p>
+
+<p>Let’s say 15 of these 40 are actually relevant.</p>
+
+<p>Then the precision of the model = 15/40.</p>
+
+<hr />
+
+<p>Recall is the ratio of actually true predictions made by the model vs. All the truth that is available (which may or may not have been predicted) in space (True positives + False negatives)</p>
+
+<p>Another  way to interpret this is  - in a world which has 40 correct results, how many of these correct results were the model actually able to retrieve?</p>
+
+<p>Let’s take the example of a search model:</p>
+<ul>
+  <li>A search engine model returns 30 pages.</li>
+  <li>20 of these are actually correct / relevant results.</li>
+  <li>But the search engine missed 40 other results that are also correct - the search engine classified the e40 as not relevant.</li>
+  <li>The recall is 20/(40+20)</li>
+</ul>
+
+<hr />
+
+<p>This diagram from Wikimedia also really helped click &amp; remember this concept. I am a visual learner, as such the picture is often stuck in my head.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Precisionrecall.svg/495px-Precisionrecall.svg.png" alt="" /></p>
+
+<hr />
+
+<p>Adapted from: <a href="https://en.wikipedia.org/wiki/Precision_and_recall#:~:text=In%20pattern%20recognition%2C%20information%20retrieval,of%20relevant%20instances%20that%20were">Precision and recall - Wikipedia</a></p>
+
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+
+
+      <div style="font-size: 0.9em">
+        <p>
+          There are no notes linking to this note.
+        </p>
+      </div>
+
+    </side>
+  </div>
+</article>
+
+<hr>
+
+<!-- Uncomment the following lines to enable the graph  -->
+<!-- <p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
+
+<style>
+  .links line {
+    stroke: #ccc;
+    opacity: 0.5;
+  }
+
+  .nodes circle {
+    cursor: pointer;
+    fill: blue;
+    transition: all 0.15s ease-out;
+  }
+
+  .text text {
+    cursor: pointer;
+    fill: #333;
+    text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb, 1px 1px 0 #fafafabb;
+  }
+
+  .nodes [active],
+  .text [active] {
+    cursor: pointer;
+    fill: red;
+  }
+
+  .nodes circle[active] {
+    r: 6;
+  }
+
+  #graph-wrapper {
+    background: #fafafa;
+    border-radius: 4px;
+    height: auto;
+  }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"
+  integrity="sha512-FHsFVKQ/T1KWJDGSbrUhTJyS1ph3eRrxI228ND0EGaEp6v4a/vGwPWd3Dtd/+9cI7ccofZvl/wulICEurHN1pg=="
+  crossorigin="anonymous"></script>
+
+<div id="graph-wrapper">
+  <script>
+    const RADIUS = 4;
+    const STROKE = 1;
+    const FONT_SIZE = 15;
+    const TICKS = 100;
+    const FONT_BASELINE = 15;
+    const MAX_LABEL_LENGTH = 50;
+
+    const graphData = {"edges":[],"nodes":[{"id":"626194391","path":"/action-is-better","label":"Action is harder but better than reading"},{"id":"1152671","path":"/atlas-oss","label":"Open sourcing Atlas - tools for Applied Deep Learning Development"},{"id":"48628282740514077","path":"/datacouncil-talk","label":"Datacouncil NYC 19' Talk"},{"id":"2221370068514","path":"/distraction-time","label":"Schedule personal distraction time to be able to deep work effectively"},{"id":"72674812227479","path":"/precision-recall","label":"Precision vs. Recall"},{"id":"84531860657236","path":"/typeface-dataset","label":"Typefaces - Character Font Image & CSV Dataset"},{"id":"145227769665069534892","path":"/understanding-ml-sets","label":"Understanding True Positives, False Positives, True Negatives & False Negatives"},{"id":"2569390390423852","path":"/uoft","label":"Partnering with University of Toronto - CSC 454 - The business of software"}]}
+
+    let nodesData = graphData.nodes;
+    let linksData = graphData.edges;
+
+    const onClick = (d) => {
+      window.location = d.path
+    };
+
+    const element = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "svg"
+    );
+    const graphWrapper = document.getElementById('graph-wrapper')
+
+    element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
+    graphWrapper.setAttribute("height", window.innerHeight * 0.8);
+    element.setAttribute("height", window.innerHeight * 0.8);
+
+    graphWrapper.appendChild(element);
+
+    const reportWindowSize = () => {
+      element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
+      graphWrapper.setAttribute("height", window.innerHeight * 0.8);
+      element.setAttribute("height", window.innerHeight * 0.8);
+    };
+
+    window.onresize = reportWindowSize;
+
+    const svg = d3.select("svg");
+    const width = Number(svg.attr("width"));
+    const height = Number(svg.attr("height"));
+    let zoomLevel = 1;
+
+    const simulation = d3
+      .forceSimulation(nodesData)
+      .force("charge", d3
+        .forceManyBody()
+        .strength(-4000)
+      )
+      .force(
+        "link",
+        d3
+          .forceLink(linksData)
+          .id((d) => d.id)
+          .distance(150)
+      )
+      .force("center", d3.forceCenter(width / 2, height / 2))
+      .stop();
+
+    const g = svg.append("g");
+    let link = g.append("g").attr("class", "links").selectAll(".link");
+    let node = g.append("g").attr("class", "nodes").selectAll(".node");
+    let text = g.append("g").attr("class", "text").selectAll(".text");
+
+    const zoomActions = () => {
+      const scale = d3.event.transform;
+      zoomLevel = scale.k;
+      g.attr("transform", scale);
+
+      const zoomOrKeep = (value) => (scale.k >= 1 ? value / scale.k : value);
+
+      const font = Math.max(Math.round(zoomOrKeep(FONT_SIZE)), 1);
+
+      text.attr("font-size", `${font}px`);
+      text.attr("y", (d) => d.y - zoomOrKeep(FONT_BASELINE));
+      link.attr("stroke-width", zoomOrKeep(STROKE));
+      node.attr("r", zoomOrKeep(RADIUS));
+    };
+
+    const ticked = () => {
+      node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+      text
+        .attr("x", (d) => d.x)
+        .attr("y", (d) => d.y - FONT_BASELINE / zoomLevel);
+      link
+        .attr("x1", (d) => d.source.x)
+        .attr("y1", (d) => d.source.y)
+        .attr("x2", (d) => d.target.x)
+        .attr("y2", (d) => d.target.y);
+    };
+
+    const restart = () => {
+      node = node.data(nodesData, (d) => d.id);
+      node.exit().remove();
+      node = node
+        .enter()
+        .append("circle")
+        .attr("r", RADIUS)
+        // .attr("fill", (d) => getNodeColor(d))
+        .on("click", onClick)
+        .merge(node);
+
+      link = link.data(linksData, (d) => `${d.source.id}-${d.target.id}`);
+      link.exit().remove();
+      link = link
+        .enter()
+        .append("line")
+        .attr("stroke-width", STROKE)
+        .merge(link);
+
+      node.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+      text.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+
+      text = text.data(nodesData, (d) => d.label);
+      text.exit().remove();
+      text = text
+        .enter()
+        .append("text")
+        .text((d) => shorten(d.label.replace(/_*/g, ""), MAX_LABEL_LENGTH))
+        .attr("font-size", `${FONT_SIZE}px`)
+        .attr("text-anchor", "middle")
+        .attr("alignment-baseline", "central")
+        .on("click", onClick)
+        .merge(text);
+
+      simulation.nodes(nodesData);
+      simulation.force("link").links(linksData);
+      simulation.alpha(1).restart();
+      simulation.stop();
+
+      for (let i = 0; i < TICKS; i++) {
+        simulation.tick();
+      }
+
+      ticked();
+    };
+
+    const zoomHandler = d3
+      .zoom()
+      .scaleExtent([0.2, 3])
+      //.translateExtent([[0,0], [width, height]])
+      //.extent([[0, 0], [width, height]])
+      .on("zoom", zoomActions);
+
+    zoomHandler(svg);
+    restart();
+
+    function isCurrentPath(notePath) {
+      return window.location.pathname.includes(notePath)
+    }
+
+    function shorten(str, maxLen, separator = ' ') {
+      if (str.length <= maxLen) return str;
+      return str.substr(0, str.lastIndexOf(separator, maxLen)) + '...';
+    }
+  </script>
 </div>
+ -->
 </main>
       <footer>Find me on <b><a class="internal-link" href="https://twitter.com/mohammedri_">Twitter</a>!</b>
 </footer>
