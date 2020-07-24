@@ -12,11 +12,11 @@ permalink: /
   <img src="../assets/data.jpg" alt="Smiley face" style="float:left;width:100px;height:100px; padding-right:18px;object-fit: cover;">
   I'm Mohammed, a Product Manager working on Deep Learning Products <a href="www.dessa.com">@Dessa</a> (acquired by <a href="www.squareup.com">@Square</a>). <br />You can learn more about me <span style="font-weight: bold"><a href="/about">here.</a></span>.
   <br /><br />
-  Or you can reach out to me on <b><a href="www.twitter.com/mohammedri_">Twitter</a></b> (DMs open, say hi!).
+  Or you can reach out to me on <b><a href="https://www.twitter.com/mohammedri_">Twitter</a></b> (DMs open, say hi!).
 </p>
 
 _This website serves a few purposes:_
-- I maintain most of my long form writings here; short form thoughts are usually on [Twitter](www.twitter.com/mohammedri_).
+- I maintain most of my long form writings here; short form thoughts are usually on [Twitter](https://www.twitter.com/mohammedri_).
 - This is my JavaScript/Web development playground 
 - It also holds several incomplete thoughts under the **#incomplete** header.
 
