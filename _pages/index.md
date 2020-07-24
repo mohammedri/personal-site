@@ -5,16 +5,17 @@ id: home
 permalink: /
 ---
 
-# Hello - 👋🏽
+# Hi -
+
 
 <p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  <img src="../assets/photo.jpg" alt="Smiley face" style="float:left;width:90px;height:90px;padding-right: 20px">
-  I'm a Product Manager working on Deep Learning Products <a href="www.dessa.com">@Dessa</a> (acquired by <a href="www.squareup.com">@Square</a>). <br />You can learn more about me <span style="font-weight: bold"><a href="/about">here.</a></span>.
+  <img src="../assets/data.jpg" alt="Smiley face" style="float:left;width:100px;height:100px; padding-right:18px;object-fit: cover;">
+  I'm Mohammed, a Product Manager working on Deep Learning Products <a href="www.dessa.com">@Dessa</a> (acquired by <a href="www.squareup.com">@Square</a>). <br />You can learn more about me <span style="font-weight: bold"><a href="/about">here.</a></span>.
   <br /><br />
   Or you can reach out to me on <b><a href="www.twitter.com/mohammedri_">Twitter</a></b> (DMs open, say hi!).
 </p>
 
-_This website serves few purposes:_
+_This website serves a few purposes:_
 - I maintain most of my long form writings here; short form thoughts are usually on [Twitter](www.twitter.com/mohammedri_).
 - This is my JavaScript/Web development playground 
 - It also holds several incomplete thoughts under the **#incomplete** header.
