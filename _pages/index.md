@@ -7,7 +7,6 @@ permalink: /
 
 # Hi -
 
-
 <p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
   <img src="../assets/data.jpg" alt="Smiley face" style="float:left;width:100px;height:100px; padding-right:18px;object-fit: cover;">
   I'm Mohammed, a Product Manager working on Deep Learning Products <a href="www.dessa.com">@Dessa</a> (acquired by <a href="www.squareup.com">@Square</a>). <br />You can learn more about me <span style="font-weight: bold"><a href="/about">here.</a></span>.
@@ -16,11 +15,13 @@ permalink: /
 </p>
 
 _This website serves a few purposes:_
+
 - I maintain most of my long form writings here; short form thoughts are usually on [Twitter](https://www.twitter.com/mohammedri_).
-- This is my JavaScript/Web development playground 
+- This is my JavaScript/Web development playground
 - It also holds several incomplete thoughts under the **#incomplete** header.
 
 ## Posts
+
 P.S. In true Zettelkasten style - if you want to view the links between each note in a graph, <span style="font-weight: bold"><a href="/zettelkasten-graph">check this out.</a></span>.
 
 #### #untagged
@@ -30,15 +31,22 @@ P.S. In true Zettelkasten style - if you want to view the links between each not
 - [[Typefaces - Character Font Image & CSV Dataset]]
 - [[Partnering with University of Toronto - CSC 454 - The business of software]]
 
+#### #product-management
+
+- [[Kill features that don't work, FAST.]]
+
 #### #machine-learning
+
 - [[Understanding True Positives, False Positives, True Negatives & False Negatives]]
 - [[Precision vs. Recall]]
 
 #### #productivity
+
 - [[Schedule personal distraction time to be able to Deep Work effectively]]
 - [[Action is harder but better than reading]]
 
-## Books & Reviews 
+## Books & Reviews
+
 - [Financial Inclusion at the Bottom of the Pyramid](https://www.goodreads.com/book/show/25992829-financial-inclusion-at-the-bottom-of-the-pyramid)
 - [Gang Leader for a Day: A Rogue Sociologist Takes to the Streets](https://www.goodreads.com/book/show/1491906.Gang_Leader_for_a_Day)
 - [Dreams from My Father: A Story of Race and Inheritance by Barack Obama](https://www.goodreads.com/book/show/88061.Dreams_from_My_Father)
@@ -92,7 +100,7 @@ P.S. In true Zettelkasten style - if you want to view the links between each not
 - [Man’s Search for Meaning by Viktor E. Frankl](https://www.goodreads.com/book/show/4069.Man_s_Search_for_Meaning)
 - [Flashes of Thought: Lessons in life and leadership from the man behind Dubai](https://www.goodreads.com/book/show/24796173-flashes-of-thought)
 - [21 Lessons for the 21st Century: Yuval Noah Harari](https://www.amazon.ca/gp/product/B07H43DHV3/ref=ppx_yo_dt_b_d_asin_title_o01aud_?ie=UTF8&psc=1)
-  
+
 <style>
   .wrapper {
     max-width: 46em;
