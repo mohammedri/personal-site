@@ -30,7 +30,7 @@ P.S. In true Zettelkasten style - if you want to view the links between each not
 - [[Datacouncil NYC 19' Talk]]
 - [[Typefaces - Character Font Image & CSV Dataset]]
 - [[Partnering with University of Toronto - CSC 454 - The business of software]]
-- [[Various ways the human brain is different from computers ]]
+- [[Various ways the human brain is different from computers]]
 
 #### #product-management
 

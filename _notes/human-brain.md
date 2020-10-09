@@ -2,6 +2,8 @@
 title: Various ways the human brain is different from computers
 ---
 
+# Various ways the human brain is different from computers
+
 - The human brain is different from a computer in that there is no centralized CPU or memory locations. Instead the network’s knowledge and memories are distributed throughout the structure in the “weights” of it.
 - Feedback loops form the crux of the brain as well. Whereas in computers often it is usually sensors —> CPU —> Action.
 
