@@ -13,7 +13,7 @@ permalink: /
   <br /><br />
   Or you can reach out to me on <b><a href="https://www.twitter.com/mohammedri_">Twitter</a></b> (DMs open, say hi!).
   <br /><br />
-(p.s. if you are hiring for a solid software engineering intern, check out my sister: [Maisha Thasin](www.maisha-thasin.com))
+(p.s. if you are hiring for a solid software engineering intern, check out my sister: <a href="http://www.maisha-thasin.com">Maisha Thasin</a>)
 
 </p>
 
