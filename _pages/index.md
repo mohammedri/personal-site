@@ -12,6 +12,9 @@ permalink: /
   I'm Mohammed, a Product Manager working on Deep Learning Products <a href="www.dessa.com">@Dessa</a> (acquired by <a href="www.squareup.com">@Square</a>). <br />You can learn more about me <span style="font-weight: bold"><a href="/about">here.</a></span>.
   <br /><br />
   Or you can reach out to me on <b><a href="https://www.twitter.com/mohammedri_">Twitter</a></b> (DMs open, say hi!).
+
+(p.s. if you are hiring for a solid software engineering intern, check out my sister: [Maisha Thasin](www.maisha-thasin.com))
+
 </p>
 
 _This website serves a few purposes:_
