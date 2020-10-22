@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mohammed Ridwanul]]></title><description><![CDATA[Mohammed Ridwanul - Product Manager]]></description><link>https://www.mohammedri.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 22 Oct 2020 00:07:48 GMT</lastBuildDate><item><title><![CDATA[Datacouncil NYC 19' Talk]]></title><description><![CDATA[Oct 21 2020 Update:  @Chip Huyen has a great thread that talks a lot about this as well, check it out here: https://twitter.com/chipro…]]></description><link>https://www.mohammedri.com/datacouncil/</link><guid isPermaLink="false">https://www.mohammedri.com/datacouncil/</guid><pubDate>Sun, 01 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Oct 21 2020 Update: &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/chipro&quot;&gt;@Chip Huyen&lt;/a&gt; has a great thread that talks a lot about this as well, check it out here: &lt;a href=&quot;https://twitter.com/chipro/status/1313921889061015557?s=20&quot;&gt;https://twitter.com/chipro/status/1313921889061015557?s=20&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Building Systems to Monitor Data and Model Health in Production Systems. Unlike traditional deterministic software, models in production start to degrade as soon as they have been deployed.&lt;/p&gt;
+&lt;p&gt;Typically these degradations are caused by three broad types of problems:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bugs in the data data pipeline: This can manifest in many different ways e.g. someone changes code upstream and now a particular column could be filled with NaNs.&lt;/li&gt;
+&lt;li&gt;Input distribution shifts: This is caused by changes in real world phenomenon e.g. a bank has a churn prediction model - their competitor has just released a new competitive campaign. This in itself can manifest in distribution shifts as customer behavior changes.&lt;/li&gt;
+&lt;li&gt;Concept drift: This happens when the actual relationship between the input and output changes.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Traditional testing infrastructure is currently not suitable to handle the dynamic nature of machine learning models.&lt;/p&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;500&quot; src=&quot;https://www.youtube.com/embed/WZNEsc7ynxI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In this talk, Mohammed Ridwanul, Product Manager at Dessa, will speak about writing tests to monitor machine learning models, creating data contracts and metadata stores for reference checks and building automated systems around model testing to prevent degradation in production.&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Open sourcing Atlas - tools for Applied Deep Learning Development]]></title><description><![CDATA[Excited to share that, my team just recently open sourced Atlas.  Atlas is a flexible Machine Learning platform that consists of a Python…]]></description><link>https://www.mohammedri.com/atlas/</link><guid isPermaLink="false">https://www.mohammedri.com/atlas/</guid><pubDate>Wed, 08 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Excited to share that, my team just recently open sourced Atlas. &lt;/p&gt;
+&lt;p&gt;Atlas is a flexible Machine Learning platform that consists of a Python SDK, CLI, GUI &amp;#x26; Scheduler to help Machine Learning Engineering teams dramatically reduce the model development time &amp;#x26; reduce effort in managing infrastructure.&lt;/p&gt;
+&lt;p&gt;We are still currently in BETA and would love the community’s help to ship a flexible, easy to use - ML Platform. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Check out and contribute to Atlas in our Github repo: &lt;a href=&quot;https://github.com/dessa-oss/atlas&quot;&gt;https://github.com/dessa-oss/atlas&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/89c27e8fe74d75675290d1d0091a53d0/91a72/atlas.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin: 7vw 0; max-width: 1360px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 71.17647058823529%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABxUlEQVQ4y42Ty27UMBSG84qAWrFkAypiw4KnAbpEPETfoRKiRa00bdUL7SROJjc7vsX9OT65kFaatotPx5rYn/9je5Ldzz/x7ssPvP20j52979j9GNnHmw/fuL56/xWvXwqtScSmhSgHikrO5ERWNMg2z5MWA3GcVHWLq5sMd2kBkVfIiXVaYlM2uA8e3jv0TxC8B0Jg7nuPpCDr5U2OVNScaE0UmxpNo2CthTFmK9ZYVJ3C7/IOh8VfrNsaidYaQmTIMkopBK5FDkkiaw3it46I9bFMG01Cg4aEq0rgtExRqHYQXpyt8OvoCNfHx5Dn51DOzZLg/CAYxXqxQawxpVUdXKfhaJw4Wux9j1gdnYMeZdOik/wWakyjlPov4i4GNCc2PGZhHKiug+97OmiPnmogDB36SblGTxuFLfBcqp7WzcK4YytbWLolZx2n9dSqonM8uPrD4rjQjZtNRMnElJaFLKXIrg/8TOKEmDSKbmVFzyfMkrAYL5k6ZWE8l1bW1LKkD34UDolOqWU7Jou/bxM+SMgHqyVJWr4gXkiTpNVYlRmPp9YetzoxJzTj7QyP2D64vYi37tkHviRZTrZP/SusfRH/AMv/IJ791leWAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/89c27e8fe74d75675290d1d0091a53d0/51a8e/atlas.webp 340w,
+/static/89c27e8fe74d75675290d1d0091a53d0/713b7/atlas.webp 680w,
+/static/89c27e8fe74d75675290d1d0091a53d0/54376/atlas.webp 1360w,
+/static/89c27e8fe74d75675290d1d0091a53d0/3553a/atlas.webp 1440w&quot;
+          sizes=&quot;(max-width: 1360px) 100vw, 1360px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/89c27e8fe74d75675290d1d0091a53d0/ad208/atlas.png 340w,
+/static/89c27e8fe74d75675290d1d0091a53d0/a5a26/atlas.png 680w,
+/static/89c27e8fe74d75675290d1d0091a53d0/60356/atlas.png 1360w,
+/static/89c27e8fe74d75675290d1d0091a53d0/91a72/atlas.png 1440w&quot;
+          sizes=&quot;(max-width: 1360px) 100vw, 1360px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+          src=&quot;/static/89c27e8fe74d75675290d1d0091a53d0/60356/atlas.png&quot;
+          alt=&quot;atlas&quot;
+          title=&quot;&quot;
+          src=&quot;/static/89c27e8fe74d75675290d1d0091a53d0/60356/atlas.png&quot;
+        /&gt;
+      &lt;/picture&gt;
+      &lt;/span&gt;
+  &lt;/span&gt;
+
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Partnering with University of Toronto - CSC 454 - The business of software]]></title><description><![CDATA[Excited to partner with our good friends at UofT at the Department of Computer Science Innovation Lab. CSC454 - Business of Software
+CSC49…]]></description><link>https://www.mohammedri.com/uoft/</link><guid isPermaLink="false">https://www.mohammedri.com/uoft/</guid><pubDate>Fri, 03 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Excited to partner with our good friends at UofT at the Department of Computer Science Innovation Lab.&lt;/p&gt;
+&lt;p&gt;CSC454 - Business of Software
+CSC491 - Product Development Capstone Design&lt;/p&gt;
+&lt;p&gt;Students wll learn about how to create businesses that use Machine Learning for the Healthcare vertical and I will be providing guest lectures occassionally. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/635bc2754b3e05cb00176fdc9a37430a/27aef/dcsil.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin: 7vw 0; max-width: 1052px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 133.23529411764707%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,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&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/635bc2754b3e05cb00176fdc9a37430a/51a8e/dcsil.webp 340w,
+/static/635bc2754b3e05cb00176fdc9a37430a/713b7/dcsil.webp 680w,
+/static/635bc2754b3e05cb00176fdc9a37430a/7d7f1/dcsil.webp 1052w&quot;
+          sizes=&quot;(max-width: 1052px) 100vw, 1052px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/635bc2754b3e05cb00176fdc9a37430a/ad208/dcsil.png 340w,
+/static/635bc2754b3e05cb00176fdc9a37430a/a5a26/dcsil.png 680w,
+/static/635bc2754b3e05cb00176fdc9a37430a/27aef/dcsil.png 1052w&quot;
+          sizes=&quot;(max-width: 1052px) 100vw, 1052px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+          src=&quot;/static/635bc2754b3e05cb00176fdc9a37430a/27aef/dcsil.png&quot;
+          alt=&quot;dcsil&quot;
+          title=&quot;&quot;
+          src=&quot;/static/635bc2754b3e05cb00176fdc9a37430a/27aef/dcsil.png&quot;
+        /&gt;
+      &lt;/picture&gt;
+      &lt;/span&gt;
+  &lt;/span&gt;
+
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Typefaces - Character Font Image & CSV Dataset]]></title><description><![CDATA[A dataset for Machine Learning experiment on Typefaces. Download: Fonts to Character-wise PNG (28x28), alphabets & numbers only Character…]]></description><link>https://www.mohammedri.com/typeface/</link><guid isPermaLink="false">https://www.mohammedri.com/typeface/</guid><pubDate>Fri, 03 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;A dataset for Machine Learning experiment on Typefaces.&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Download:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://console.cloud.google.com/storage/browser/open-fonts-dataset/images&quot;&gt;Fonts to Character-wise PNG (28x28), alphabets &amp;#x26; numbers only&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://console.cloud.google.com/storage/browser/open-fonts-dataset/csv&quot;&gt;Character-wise PNGs (28x28) to CSV, alphabets &amp;#x26; numbers only&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;This is a dataset that consists of 2500+ fonts taken from the &lt;a href=&quot;https://fonts.google.com/&quot;&gt;Google Fonts&lt;/a&gt; database that have been converted to character-wise PNGs and then flattened into a CSV for ML experiments.&lt;/p&gt;
+&lt;p&gt;I have only considered uppercase / lower case letters and numbers - ignoring other symbols or dingbats.&lt;/p&gt;
+&lt;p&gt;Each PNG is in greyscale (each pixel can take the value of 0 to 255)) 28x28 pixels in size.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0f880558112ae6cc87bc3a643f570e33/cb2d6/screenshot-fonts.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin: 7vw 0; max-width: 1118px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 72.35294117647058%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAACE0lEQVQ4y1WTx25iQRBF3/9vkMEsyTkJTLABkZNgAQhEzmBM+IqaOTVqi1k83a56iDqcaqx0Oi2pVEpisZgEAgHJ5/Py8fEhPp9P+x6PR9Pr9UoulxOXyyXFYlHe3t40nU6nNJtNsdvtUq1Wxdrv97Lb7eRyucj5fJbD4SDH41HP39/feiZPp5P8/PzoZ2+3m2y3W3k8HrJarf5LKxIOSygUkmQy+UsKYTAYFOgjkYh8fn6K3++XQqGgxNQkRDabTWq1mjgcDiVVQh4IoCGhpQclRORms9E+ZJCu12slpf98PmW5XMr9fhcLEqbH43GlIzOZjJJBhDNIIcpms+q2VCqpOxzyvt/vK2mj0RALZ4bGUHKmZ4hM4hKi6/WqCSGkuPslTCQSSsN03OERR+G/btkqv4DNG4fUEPK+Xq9rH8L39/d/DpnMNFyRr2foIYB8sVhosk2IqSGdTqdKTlJbUEAHBQT4IvFYLpe1ZouQfH19STQalUqloq7b7ba43W7pdDp6S0ajkVhMZBpEnHnMGY/z+VxzNpspMSR4nkwm6no8HiuxSQsa6JjOGVoc0cMRpBDiGjJuAvcPwm63q1vv9Xr6fjgcioWjVyrqV0K2BxmkJKS4hBRC444vo7bYLJ5Is2kIcYVfCCHiJtCHzDjlF0A4GAx0y61WSyx8MJlv5zH3kJ75x7BF8w8hzf3j3kFOTVL/AZYSoPSVhVn9AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/0f880558112ae6cc87bc3a643f570e33/51a8e/screenshot-fonts.webp 340w,
+/static/0f880558112ae6cc87bc3a643f570e33/713b7/screenshot-fonts.webp 680w,
+/static/0f880558112ae6cc87bc3a643f570e33/4ee50/screenshot-fonts.webp 1118w&quot;
+          sizes=&quot;(max-width: 1118px) 100vw, 1118px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/0f880558112ae6cc87bc3a643f570e33/ad208/screenshot-fonts.png 340w,
+/static/0f880558112ae6cc87bc3a643f570e33/a5a26/screenshot-fonts.png 680w,
+/static/0f880558112ae6cc87bc3a643f570e33/cb2d6/screenshot-fonts.png 1118w&quot;
+          sizes=&quot;(max-width: 1118px) 100vw, 1118px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+          src=&quot;/static/0f880558112ae6cc87bc3a643f570e33/cb2d6/screenshot-fonts.png&quot;
+          alt=&quot;screenshot fonts&quot;
+          title=&quot;&quot;
+          src=&quot;/static/0f880558112ae6cc87bc3a643f570e33/cb2d6/screenshot-fonts.png&quot;
+        /&gt;
+      &lt;/picture&gt;
+      &lt;/span&gt;
+  &lt;/span&gt;
+
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;The CSV is formatted similar to &lt;a href=&quot;https://pjreddie.com/projects/mnist-in-csv/&quot;&gt;MNIST in CSV&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;font-name, character, pix-11, pix-12, pix-13, ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8f9994efa6818b530caaa985c1ba9130/cdc75/screenshot-csv.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin: 7vw 0; max-width: 634px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 80%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALDwEtsRLgAAABhElEQVQ4y5WUCY6CQBAA+f/LiBG88AJG0AcoivHWXquTJkhE3UkIGULXVB/gxXEs3W5XJpOJhGEozjm53+96FUUhh8NBrter3G433V8uF72zL8tSzuezbLdbfb7ZbMRLklhBs9lMer2eZFkmrMfjIbvdTk6nU3UAgYC4s9/v9woCzKE89zAEiCFADIERwIsAgZghgU1DDq4MnUtlMBgI4CiKZLlcVkYYALSUMTCTd0AO8vI8UxBm4/H4BUjg8XhsBXIgQMAANWVqVgeuVqsK2Ez5J+BisZAgCGU6nWoN8zxXGAHY8aJZ/gSkhs2xoSkEWqr1Gr0bm5emJEnyNAzUECDGAAkAiC0BdcM2oDYlTRMFWcoGBGTA+px9mkMFujRVEMB+v18Ndj3leqpfU7Yuz+dzrSPg9XqtBm1NAdDaFOYQGCDqSYOsMTbY/xobDIFhB5h6Mtysb19Kyxw6/fSoH4Pd6XQkfdaVZT+HZi0/fnqkNxqNZDgcKtD3/QpoBgT/8rcB+AcZXr5ssr/q3QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/8f9994efa6818b530caaa985c1ba9130/51a8e/screenshot-csv.webp 340w,
+/static/8f9994efa6818b530caaa985c1ba9130/f4c5a/screenshot-csv.webp 634w&quot;
+          sizes=&quot;(max-width: 634px) 100vw, 634px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/8f9994efa6818b530caaa985c1ba9130/ad208/screenshot-csv.png 340w,
+/static/8f9994efa6818b530caaa985c1ba9130/cdc75/screenshot-csv.png 634w&quot;
+          sizes=&quot;(max-width: 634px) 100vw, 634px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+          src=&quot;/static/8f9994efa6818b530caaa985c1ba9130/cdc75/screenshot-csv.png&quot;
+          alt=&quot;screenshot csv&quot;
+          title=&quot;&quot;
+          src=&quot;/static/8f9994efa6818b530caaa985c1ba9130/cdc75/screenshot-csv.png&quot;
+        /&gt;
+      &lt;/picture&gt;
+      &lt;/span&gt;
+  &lt;/span&gt;
+
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Bugs? Built something cool?&lt;/h3&gt;
+&lt;p&gt;Reach out &lt;a href=&quot;https://twitter.com/mohammedri_&quot;&gt;@mohammedri_&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Script to generate this dataset from &lt;code class=&quot;language-text&quot;&gt;.ttf&lt;/code&gt; files:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;image_width &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;28&lt;/span&gt;
+image_height &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;28&lt;/span&gt;
+
+characters &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;string&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ascii_letters &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;digits&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# Characters to consider, ignoring symbols&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;csv_dataset_folder &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;google_fonts_dataset.csv&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;w&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; newline&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    writer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; csv&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;writer&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; dialect&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;excel&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; font_file &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; ttf_files&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;font_file&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+        font_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; font_file&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;split&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+        font &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ImageFont&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;truetype&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;font_file&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; encoding&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;unic&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; character &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; characters&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            image &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Image&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;new&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;L&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;image_width&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;image_height&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;black&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            draw &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ImageDraw&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Draw&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;image&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            text_width&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; text_height &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; draw&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;textsize&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;character&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; font&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;font&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+            offset &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; font&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getoffset&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;character&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+            draw&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;text&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;image_width&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;text_width&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;offset&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;image_height&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;text_height&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;offset&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                character&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                fill&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;white&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                font&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;font
+            &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+            row &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;image&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getdata&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            row&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;insert&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; character&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            row&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;insert&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; font_name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+            writer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;writerow&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;row&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; character&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;isupper&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                image&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;save&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dataset_dir &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; images_dir &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string-interpolation&quot;&gt;&lt;span class=&quot;token string&quot;&gt;f&quot;/&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;font_name&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;-upper-&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;character&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;.png&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;PNG&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                image&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;save&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dataset_dir &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; images_dir &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string-interpolation&quot;&gt;&lt;span class=&quot;token string&quot;&gt;f&quot;/&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;font_name&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;character&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;.png&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;PNG&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>

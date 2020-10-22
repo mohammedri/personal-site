@@ -1,12 +1,12 @@
 var plugins = [{
       plugin: require('/Users/mislam/projects/mohammedri/personal-site/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
-      options: {"plugins":[],"trackingId":"UA-156909377-1"},
+      options: {"plugins":[]},
     },{
       plugin: require('/Users/mislam/projects/mohammedri/personal-site/node_modules/gatsby-plugin-feed/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       plugin: require('/Users/mislam/projects/mohammedri/personal-site/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Mohammed Ridwanul","short_name":"Mohammed","start_url":"/","background_color":"#ffffff","theme_color":"#663399","display":"minimal-ui","icon":"content/assets/icon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"2d46954cc3988783028fa37e23fcd903"},
+      options: {"plugins":[],"name":"Mohammed Ridwanul","short_name":"Mohammed","start_url":"/","background_color":"#ffffff","theme_color":"#663399","display":"minimal-ui","icon":"content/assets/gatsby-icon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"4a9773549091c227cd2eb82ccd9c5e3a"},
     },{
       plugin: require('/Users/mislam/projects/mohammedri/personal-site/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
