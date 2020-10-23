@@ -1,16 +1,16 @@
-import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import { graphql, StaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 // import "../utils/global.scss"
-import "../utils/normalize.css"
-import "../utils/css/screen.css"
+import "../utils/normalize.css";
+import "../utils/css/screen.css";
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata.title;
 
   return (
     <Layout title={siteTitle}>
@@ -107,17 +107,17 @@ const BlogIndex = ({ data }, location) => {
                   <b>A little about my personal mission:</b> <br />
                   Currently, I am driven by the mission of changing the world's
                   relationship with money & commerce. Specifically, I am
-                  inspired by company's like{" "}
+                  inspired by companies like{" "}
                   <a href="https://www.ifc.org/wps/wcm/connect/fe4a0bd4-5c58-4208-b5e4-e3a2d42c7d7a/bKash+Case.pdf?MOD=AJPERES&CVID=mGp39sL">
                     bKash
                   </a>
-                  , whose payment infrastructure has given power to the
-                  underpriviliged & underbanked in Bangladesh;{" "}
-                  <a href="https://cash.app/">Cash App</a> who is helping the
+                  whose payment infrastructure has given power to the
+                  underprivileged & underbanked in Bangladesh;{" "}
+                  <a href="https://cash.app/">Cash App</a> who are helping the
                   underbanked get access to fantastic financial systems and also
                   my past employer - <a href="www.shopify.com">Shopify</a>, who
-                  has empowered small merchants by giving them access to capital
-                  and commerce infrastructure. <br />
+                  have empowered small merchants by giving them access to
+                  capital and commerce infrastructure. <br />
                   <br />
                   Understandbly so, I'm also extremely bullish on Cryptocurrency
                   (specifically Bitcoin ₿) and the impact it will have on the
@@ -133,8 +133,8 @@ const BlogIndex = ({ data }, location) => {
         </div>
       </article>
     </Layout>
-  )
-}
+  );
+};
 
 const indexQuery = graphql`
   query {
@@ -152,13 +152,13 @@ const indexQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default props => (
+export default (props) => (
   <StaticQuery
     query={indexQuery}
-    render={data => (
+    render={(data) => (
       <BlogIndex location={props.location} props data={data} {...props} />
     )}
   />
-)
+);
