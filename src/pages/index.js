@@ -36,46 +36,31 @@ const BlogIndex = ({ data }, location) => {
               <div>
                 <p>
                   {" "}
-                  Hi, I'm Mohammed - Product Manager at{" "}
+                  Hi, I'm Mohammed - Sr. Product Manager at{" "}
                   <b>
                     <a href="www.cash.app">Cash App</a>
                   </b>{" "}
-                  working within the{" "}
-                  <b>
-                    <a href="www.dessa.com">Dessa</a>
-                  </b>{" "}
-                  & Strategic Development sub-org. <br /> <br />
-                  I've spent most of my career building deep technical products,
-                  first as a Data Platform Engineer at{" "}
-                  <a href="www.shopify.com">Shopify</a>, where I worked on a
-                  Kafka based schematized event streaming library and then as a
-                  Product Manager helping <a href="www.dessa.com">Dessa</a>{" "}
-                  transform from a service oriented business to a product-led
-                  company by launching{" "}
-                  <a href="http://www.atlas.dessa.com">
-                    Machine Learning infrastructure
-                  </a>{" "}
-                  related products for enterprises up until our{" "}
+                  working within the Strategic Development sub-org. <br />{" "}
+                  <br />
+                  I specialize in go-to-market, monetization & growth strategies
+                  for early-stage products. My domain expertise is in the areas
+                  of Fintech, e-Commerce, Payments facilitation, API products,
+                  Data Infrastructure & Deep Learning. <br />
+                  <br /> I've spent most of my career building a wide range of
+                  products, first as a Data Platform Engineer at{" "}
+                  <a href="www.shopify.com">Shopify</a>, where I worked on
+                  technical data API products and then as a Product Manager at{" "}
+                  <a href="www.dessa.com">Dessa</a>, helping lead its
+                  transformation from a service oriented business to a
+                  product-led company all the way up to our{" "}
                   <a href="https://squareup.com/ca/en/press/dessa-joins-square">
                     acquisition by Square in 2019.
                   </a>
                   <br />
                   <br />
-                  At Cash App, I have/am working on various projects, including:
-                  <ul>
-                    <li>
-                      Open sourcing Dessa's ML infrastructure -{" "}
-                      <a href="https://github.com/dessa-oss/atlas">Atlas</a>.
-                    </li>
-                    <li>
-                      Using Deep Learning to automate various aspects of Cash
-                      App's operations.
-                    </li>
-                    <li>
-                      Testing out & working on various experimental and moonshot
-                      projects.
-                    </li>
-                  </ul>
+                  At Cash App, my team primarily focuses on commercializing new
+                  business lines and building products that help increase Cash
+                  Apps' Total Addressable Market.
                 </p>
                 <p>
                   I've received my B.ASc from the Electrical & Computer
@@ -110,22 +95,19 @@ const BlogIndex = ({ data }, location) => {
                   inspired by companies like{" "}
                   <a href="https://www.ifc.org/wps/wcm/connect/fe4a0bd4-5c58-4208-b5e4-e3a2d42c7d7a/bKash+Case.pdf?MOD=AJPERES&CVID=mGp39sL">
                     bKash
-                  </a>
+                  </a>{" "}
                   whose payment infrastructure has given power to the
                   underprivileged & underbanked in Bangladesh;{" "}
-                  <a href="https://cash.app/">Cash App</a> who are helping the
-                  underbanked get access to fantastic financial systems and also
-                  my past employer - <a href="www.shopify.com">Shopify</a>, who
-                  have empowered small merchants by giving them access to
-                  capital and commerce infrastructure. <br />
+                  <a href="https://cash.app/"> Cash App</a> who is currently
+                  helping the underbanked in US & other areas get access to
+                  intuitive financial products and{" "}
+                  <a href="www.shopify.com">Shopify</a>, who is empowering small
+                  merchants by giving them access to capital and commerce
+                  infrastructure. <br />
                   <br />
-                  Understandbly so, I'm also extremely bullish on Cryptocurrency
-                  (specifically Bitcoin ₿) and the impact it will have on the
+                  I'm also extremely bullish on Cryptocurrency (specifically
+                  Bitcoin ₿ & Ethereum) and the impact it will have on the
                   underbanked. <br />
-                  <br /> TL;DR: I believe a combination of deep tech (like
-                  advances in Machine Learning, Distributed & Cloud computing),
-                  good product sense and with inclusive UX design we can really
-                  shape and transform our relationship with money & business.
                 </p>
               </div>
             </div>
