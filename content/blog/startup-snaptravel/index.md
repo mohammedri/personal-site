@@ -1,5 +1,5 @@
 ---
-title: Startup in the spotlight: SnapTravel
+title: Startup in the spotlight, SnapTravel
 date: "2019-09-10"
 description: SnapTravel is a startup I am really bullish on, hear about my chat with their CTO.
 thumbnail:
